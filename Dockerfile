@@ -3,6 +3,7 @@ MAINTAINER "subbu"
 RUN apt-get update
 RUN apt-get install openjdk-8-jdk -y
 RUN apt install  maven -y
+RUN git clone https://github.com/nageshvkn/gamutkart.git
 WORKDIR /opt/ammulu
 ADD https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.0-M17/bin/apache-tomcat-10.1.0-M17.tar.gz /opt/ammulu
 RUN tar -zxvf /opt/ammulu/apache-tomcat-10.1.0-M17.tar.gz
